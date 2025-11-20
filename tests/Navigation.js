@@ -30,10 +30,15 @@ describe('GreenScape Navigation Tests', () => {
     });
 
     test('Should navigate to Services page', async () => {
+        // Step 1: Go to the home page
         await driver.get(baseURL);
+        // Step 2: Find the "Services" link and click it
         await driver.findElement(By.linkText('Services')).click();
+        // Step 3: Wait for URL to change to /services (max 5 seconds)
         await driver.wait(until.urlIs(`${baseURL}/services`), 5000);
+        // Step 4: Find the h1 element and get its text
         const heading = await driver.findElement(By.css('h1')).getText();
+        // Step 5: Check if the text equals "Our Services"
         expect(heading).toBe('Our Services');
     });
 
