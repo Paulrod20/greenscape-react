@@ -15,6 +15,25 @@ function Home() {
                     From lawn maintainence to complete landscape design, we've got you covered. 
                 </p>
             </section>
+
+            <section className="features">
+                <div className="feature">
+                    <div className="feature-icon">✓</div>
+                    <h3>Licensed & Insured</h3>
+                    <p>Fully certified professionals you can trust</p>
+                </div>
+                    <div className="feature">
+                        <div className="feature-icon">⭐</div>
+                        <h3>Quality Guranteed</h3>
+                        <p>We stand behind every project we complete</p>
+                </div>
+            </section>
+
+            <section className="cta-section">
+                <h2>Ready to Get Started?</h2>
+                <p>Contact us today for a free consultation and quote</p>
+                <button className="cta-button-secondary">Contact Us</button>
+            </section>
         </div>
     );
 }
