@@ -1,0 +1,11 @@
+.services {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #2d5016;
+    margin-bottom: 1rem;
+}
